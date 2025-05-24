@@ -1,11 +1,156 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>JIO TV-WATCH live tv and movies</title>
+    <link href="index.css" rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="data:image/png;base64,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">
 </head>
+
 <body>
+    <div class="navbaar">
+        <div class="navbar-right">
+            <svg viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg" height="30px" width="30px">
+                <g clip-path="url(#ps_jio_tv_svg__clip0_31770_152467)">
+                    <path d="M32 16c0-8.837-7.163-16-16-16S0 7.163 0 16s7.163 16 16 16 16-7.163 16-16z" fill="#AA0023">
+                    </path>
+                    <path
+                        d="M19 23h-6a1 1 0 000 2h6a1 1 0 000-2zm4-14H9a3 3 0 00-3 3v7a3 3 0 003 3h14a3 3 0 003-3v-7a3 3 0 00-3-3zm-4.74 7.3l-2.66 2a1 1 0 01-1.6-.8v-4a1 1 0 011.6-.8l2.66 2a.999.999 0 010 1.6z"
+                        fill="#fff"></path>
+                </g>
+            </svg>
+            <a class="navbar-elements" href="#">JIO TV</a>
+            <a class="navbar-elements" href="#">FOR YOU</a>
+            <a class="navbar-elements" href="#">TV GUIDE</a>
+            <a class="navbar-elements" href="#">ELECTIONS</a>
+            <a class="navbar-elements" href="#">PREMIUM</a>
+            <a class="navbar-elements" href="#">MOVIES</a>
+            <a class="navbar-elements" href="#">SPORTS</a>
+            <a class="navbar-elements" href="#">SPECIALS</a>
+            <a class="navbar-elements" href="#">KIDS</a>
+            <a class="navbar-elements" href="#">NEWS</a>
+            <a class="navbar-elements" href="#">SHOWS</a>
+            <input type="text" class="search-bar" name="search" placeholder="Search jiotv" height="30px" width="10px" />
+            <div class="navbar-left">
+                <div class="p-pic"> <svg viewBox="24 24" fill="none" xmlns="http://www.w3.org/2000/svg" height="30px"
+                        width="30px" class="profile">
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                            d="M16 6a4 4 0 11-8 0 4 4 0 018 0zm4 10.5c0 3.038-3.582 5.5-8 5.5s-8-2.462-8-5.5S7.582 11 12 11s8 2.462 8 5.5z"
+                            fill="currentColor"></path>
+                    </svg>
+                </div>
+            </div>
+        </div>
+    </div>
     
+    <div class="header">
+        <div class="header-sliders">
+            <img alt="Nandini Ka Pratishodh on Sun Neo HD" class="slider"
+                src="https://jiotvimages.cdn.jio.com/dare_images/shows/epgdata/b3986440361411f0a08443a05b5dda39_1747812298884_l_medium.jpg?width=800&amp;optimize=low&amp;format=webp">
+        </div>
+        <div class="header-sliders">
+            <img alt="Rangai Jaane Rangma on Colors Gujarati"
+                src="https://jiotvimages.cdn.jio.com/dare_images/shows/epgdata/23a8bf00361511f0bdafcb8f4a445460_1747812486896_l_medium.jpg?width=800&amp;optimize=low&amp;format=webp">
+        </div class="header-sliders">
+        <img alt="Prem Leela on Dangal"
+            src="https://jiotvimages.cdn.jio.com/dare_images/shows/epgdata/c5bcb590361411f087d0810cb61db2d0_1747812329321_l_medium.jpg?width=800&amp;optimize=low&amp;format=webp">
+    </div>
+    <div class="main-content">
+        <div class="main-content-top">
+            <h2 class="j-heading j-text-heading-s" style="--color-text: var(--color-primary-80);">Daily News Updates
+            </h2>
+        </div>
+    </div>
+    <div class="main-contentdiv">
+        <div class="inner-content">
+            <img src="https://jiotvimages.cdn.jio.com/dare_images/images/channel/b0ec63c158e0eff10054a8209158e471.png?width=300&amp;optimize=low&amp;format=webp"
+                alt="News 18 India on JioTV" height="150px" width="150px">
+        </div>
+        <div class="inner-content">
+            <img src="https://jiotvimages.cdn.jio.com/dare_images/images/channel/4682633295a7c9daf68fb3d9b73431a3.png?width=300&amp;optimize=low&amp;format=webp"
+                alt="NDTV India on JioTV" height="150px" width="150px">
+        </div>
+        <div class="inner-content">
+            <img src="https://jiotvimages.cdn.jio.com/dare_images/images/channel/b0ec63c158e0eff10054a8209158e471.png?width=300&amp;optimize=low&amp;format=webp"
+                alt="News 18 India on JioTV" height="150px" width="150px">
+        </div>
+        <div class="inner-content">
+            <img src="https://jiotvimages.cdn.jio.com/dare_images/images/channel/9f31d642976f5887bb62bd3b6a07f556.png?width=300&amp;optimize=low&amp;format=webp"
+                alt="Wion on JioTV" height="150px" width="150px">
+        </div>
+        <div class="inner-content">
+            <img src="https://jiotvimages.cdn.jio.com/dare_images/images/channel/2ac59f6496016a7178f64c22eb4aa9bd.png?width=300&amp;optimize=low&amp;format=webp"
+                alt="Zee News on JioTV" height="150px" width="150px">
+        </div>
+        <div class="inner-content">
+            <img src="https://jiotvimages.cdn.jio.com/dare_images/images/channel/e17feda2c00089e21a460c7928aad7bc.png?width=300&amp;optimize=low&amp;format=webp"
+                alt="India Today on JioTV" height="150px" width="150px">
+        </div>
+        <div class="inner-content">
+            <img src="https://jiotvimages.cdn.jio.com/dare_images/images/channel/2e15b2655b3b470fc273449070f75b05.png?width=300&amp;optimize=low&amp;format=webp"
+                alt="TV9 Bharatvarsh on JioTV" height="150px" width="150px">
+        </div>
+        <div class="inner-content">
+            <img src="https://jiotvimages.cdn.jio.com/dare_images/images/channel/2e15b2655b3b470fc273449070f75b05.png?width=300&amp;optimize=low&amp;format=webp"
+                alt="TV9 Bharatvarsh on JioTV" height="150px" width="150px">
+        </div>
+        <div class="inner-content">
+            <img src="https://jiotvimages.cdn.jio.com/dare_images/images/channel/2e15b2655b3b470fc273449070f75b05.png?width=300&amp;optimize=low&amp;format=webp"
+                alt="TV9 Bharatvarsh on JioTV" height="150px" width="150px">
+        </div>
+        <div class="inner-content">
+            <img src="https://jiotvimages.cdn.jio.com/dare_images/images/channel/2e15b2655b3b470fc273449070f75b05.png?width=300&amp;optimize=low&amp;format=webp"
+                alt="TV9 Bharatvarsh on JioTV" height="150px" width="150px">
+        </div>
+        <div class="inner-content">
+            <img src="https://jiotvimages.cdn.jio.com/dare_images/images/channel/2e15b2655b3b470fc273449070f75b05.png?width=300&amp;optimize=low&amp;format=webp"
+                alt="TV9 Bharatvarsh on JioTV" height="150px" width="150px">
+        </div>
+        <div class="inner-content">
+            <img src="https://jiotvimages.cdn.jio.com/dare_images/images/channel/2e15b2655b3b470fc273449070f75b05.png?width=300&amp;optimize=low&amp;format=webp"
+                alt="TV9 Bharatvarsh on JioTV" height="150px" width="150px">
+        </div>
+    </div>
+    </div>
+
+    <div class="next-content">
+        <div class="next-content-top">
+            <h2 class="j-heading j-text-heading-s" style="--color-text: var(--color-primary-80);">Summer Special☀️
+            </h2>
+        </div>
+    </div>
+    <div class="content">
+        <div class="container">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQaXhknhIexpRl8mM1nmlYtQqraoIB2pvh9qA&s"
+                alt="News 18 India on JioTV">
+        </div>
+        <div class="container">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRhsDx08NgLEkPklJszXYQ84I9zpVY2gBwHiA&s"
+                alt="News 18 India on JioTV">
+        </div>
+        <div class="container">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQdo3tk_Wx8YLmBMWnDHygmNb91Y3IhP0MbAg&s"
+                alt="News 18 India on JioTV">
+        </div>
+        <div class="container">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSdb4XaGQG___JS87uhuakNWvg5UPlHvwjnCg&s"
+                alt="News 18 India on JioTV">
+        </div>
+        <div class="container">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRL1ZqnOmGDn9ts43_jrkLyZEiWxn2gkKiXcg&s"
+                alt="News 18 India on JioTV">
+        </div>
+        <div class="container">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSNYotlewFzcf_0a2AsEycWxdGoHCKBeEA6rQ&s"
+                alt="News 18 India on JioTV">
+        </div>
+        <div class="container">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT5Gx_n0mfGXstNBj5r4EmHrrGOIcH5RRkJ5Q&s"
+                alt="News 18 India on JioTV">
+        </div>
+        </div>
 </body>
+
 </html>
