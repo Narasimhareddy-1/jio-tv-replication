@@ -1,0 +1,330 @@
+html {
+  scroll-behavior: smooth;
+}
+.navbaar {
+  display: flex;
+  justify-content: space-between;
+  background-color: rgb(188, 11, 11);
+  overflow: hidden;
+  padding: 90px 10px; /* Large padding which will shrink on scroll (using JS) */
+  transition: 0.4s; /* Adds a transition effect when the padding is decreased */
+  position: fixed; /* Sticky/fixed navbar */
+  width: 100%;
+  top: 0; /* At the top */
+  z-index: 99;
+  border: solid white 2px;
+  padding: 10px;
+  box-shadow: 10px;
+  color: white;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-weight: bold;
+  font-size: 15px;
+}
+
+.navbar-right {
+  display: flex;
+  justify-content: ceter;
+  align-items: center;
+  padding: 10px;
+  gap: 20px;
+}
+.jiotv:hover {
+  transform: scale(1.5);
+  transition: 0.5s;
+}
+.navbar-elements {
+  color: white;
+  text-decoration: none;
+}
+.navbar-elements:hover {
+  transform: scale(1.1);
+  transition: 0.5s;
+}
+
+.navbar-elements:hover {
+  color: yellow;
+}
+
+.navbar-left {
+  display: flex;
+  justify-content: right;
+  align-items: right;
+  border: 0px;
+  padding: 0px;
+  width: auto;
+}
+
+.search-bar {
+  border-radius: 20px;
+  padding: 8px 38px;
+  height: 20px;
+  width: 80px;
+  border: solid maroon;
+  background-color: maroon;
+  background-image: url('https://www.flaticon.com/free-icons/magnifying-glass" title="magnifying glass icons');
+  background-repeat: no-repeat;
+  background-position: 10px 10px;
+  background-size: 20px 20px;
+  color: white;
+  box-shadow: 5px;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-size: medium;
+  font-weight: bold;
+}
+.search-bar:hover {
+  animation: fallBack 3s forwards;
+}
+@keyframes fallBack {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(150px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+.profile {
+  border-radius: 50%;
+  border: solid 2px rgb(159, 45, 45);
+  box-shadow: 8px;
+  background-color: white;
+  color: black;
+}
+.profile:hover {
+  transform: scale(1.5);
+  transition: 0.5s;
+}
+
+.p-pic img {
+  display: flex;
+  justify-content: right;
+  align-items: right;
+  align-content: right;
+}
+
+.p-pic {
+  display: flex;
+  justify-content: right;
+  align-items: right;
+  align-content: right;
+}
+
+.header {
+  display: flex;
+  justify-content: left;
+  align-items: left;
+  align-content: left;
+  padding: 10px;
+  padding-top: 100px;
+  gap: 20px;
+  background-position-x: center;
+  background-position-y: center;
+}
+.header-sliders img:hover {
+  transform: scale(1.1);
+  transition: 0.5s;
+}
+.slider {
+  border-radius: 10px;
+}
+
+.header-sliders {
+  display: flex;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  padding: 10px;
+  gap: 10px;
+  width: 100%;
+}
+
+.header-slider img {
+  width: 100%;
+  height: 100%;
+}
+
+.main-content {
+  display: flex;
+  justify-content: left;
+  align-items: left;
+  align-content: left;
+  padding-right: 0px;
+  padding: 4px;
+  font-weight: bold;
+}
+
+/* .inner-content{
+  display:flex;
+  flex-direction: row;
+  justify-content:left;
+  align-items:left;
+  align-content: left;
+  padding:0px;
+  width:100%;
+  height:100%;
+  border-radius: 10px;
+  
+} */
+.inner-content img {
+  border-radius: 50%;
+  box-shadow: 5px;
+  background-color: rgb(157, 157, 157);
+}
+.inner-content img:hover {
+  transform: scale(1.1);
+  transition: 0.5s;
+}
+
+.main-contentdiv {
+  display: flex;
+  flex-direction: row;
+  justify-content: left;
+  align-items: left;
+  align-content: left;
+  padding-right: 30px;
+  row-gap: 20px;
+  gap: 20px;
+}
+
+.main-content-top {
+  display: flex;
+  flex-direction: row;
+  justify-content: left;
+  align-items: left;
+  align-content: left;
+  padding-left: 50px;
+  font-size: larger;
+}
+
+.next-content-top {
+  display: flex;
+  flex-direction: row;
+  justify-content: left;
+  align-items: left;
+  align-content: left;
+  padding-left: 20px;
+}
+
+.jpl-slider-wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  padding-left: 50px;
+}
+
+.content {
+  display: flex;
+  flex-direction: row;
+  grid-template-rows: auto;
+  grid-template-columns: auto;
+  justify-content: left;
+  align-items: left;
+  border-radius: 30px;
+  gap: 20px;
+}
+
+.container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  position: relative;
+  gap: 20px;
+  border-radius: 30px;
+}
+
+.container img {
+  border-radius: 10%;
+  box-shadow: 5px;
+  background-color: rgb(157, 157, 157);
+}
+.container img:hover {
+  transform: scale(1.1);
+  transition: 0.5s;
+}
+
+.next-contents {
+  display: flex;
+  flex-direction: row;
+  justify-content: left;
+  align-items: left;
+  align-content: left;
+  padding-left: 20px;
+}
+
+.containers {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  gap: 20px;
+  border-radius: 30px;
+}
+
+.containers img {
+  border-radius: 10%;
+  box-shadow: 5px;
+  background-color: rgb(157, 157, 157);
+}
+.text-1:hover {
+  transform: scale(1.1);
+  transition: 0.5s;
+}
+   .profile-wrapper {
+      position: relative;
+      cursor: pointer;
+      background-color: white;
+      border-radius: 50%;
+      padding: 8px;
+      transition: box-shadow 0.3s ease;
+      box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1);
+    }
+
+    .profile-wrapper:hover {
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+    }
+
+    .profile {
+      width: 30px;
+      height: 30px;
+      fill: #333;
+      display: block;
+    }
+
+    .dropdown-menu {
+      display: none;
+      position: absolute;
+      right: 0;
+      top: 55px;
+      background-color: white;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+      border-radius: 12px;
+      overflow: hidden;
+      z-index: 1000;
+      min-width: 120px;
+    }
+
+    .dropdown-menu a {
+      display: block;
+      padding: 10px 15px;
+      text-decoration: none;
+      color: #333;
+      white-space: nowrap;
+      transition: background-color 0.2s ease;
+    }
+
+    .dropdown-menu a:hover {
+      background-color: #f1f1f1;
+    }
+
+    .profile-wrapper:hover .dropdown-menu {
+      display: block;
+    }
+    
